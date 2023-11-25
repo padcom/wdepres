@@ -1,0 +1,45 @@
+{
+  "name": "wdepres",
+  "version": "0.0.1",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "description": "NPM Workspace dependency resolver",
+  "keywords": ["npm", "workspaces", "monorepo"],
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": [
+    "index.mjs",
+    "cli.mjs",
+    "types.d.ts",
+    "README.md"
+  ],
+  "main": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "types": "./types.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padcom/wdepres"
+  },
+  "bugs": {
+    "url": "https://github.com/padcom/mrdr/wdepres"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/padcom"
+  },
+  "bin": {
+    "wdepres": "cli.mjs"
+  },
+  "scripts": {
+    "build": "",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "glob": "^10.3.10",
+    "print-tree": "^0.1.5"
+  }
+}
