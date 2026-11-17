@@ -1,9 +1,13 @@
 {
   "name": "wdepres",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "description": "NPM Workspace dependency resolver",
-  "keywords": ["npm", "workspaces", "monorepo"],
+  "keywords": [
+    "npm",
+    "workspaces",
+    "monorepo"
+  ],
   "license": "Apache-2.0",
   "type": "module",
   "files": [
